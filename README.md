@@ -11,12 +11,12 @@ DB details:
 	Database Name : LocationDB
 	No. Of Tables : 2
 	
-*Table 1:
+	Table 1:
 		Table Name: TerrainMaster
 		No. Of column: 2
 		Column Names: Terrain_Id, Terrain_Name
 
-*Table 2:
+	Table 2:
 		Table Name: LocationCoordinates
 		No. Of column: 5
 		Column Names: Loc_Id, Latitude, Longitude, Distance, Terrain_Id
