@@ -31,7 +31,7 @@ class Location:
 
     def insertLocationDetails(self, distance, terrain):
         conn = psycopg2.connect(
-            database="LocationDB", user='postgres', password='123456', host='localhost', port='5432')
+            database="LocationDB", user='postgres', password='password', host='localhost', port='5432')
         conn.autocommit = True
         cursor = conn.cursor()
 
@@ -51,7 +51,7 @@ class Location:
 
     def queryroadlist(self):
         conn = psycopg2.connect(
-            database="LocationDB", user='postgres', password='123456', host='localhost', port='5432')
+            database="LocationDB", user='postgres', password='password', host='localhost', port='5432')
         conn.autocommit = True
         cursor = conn.cursor()
 
@@ -110,7 +110,7 @@ if __name__ == "__main__":
             terrain = "boundary wall,road"
 
         # Updating data into LocationDB
-        correctedLocation.insertlocationdetails(distance, terrain)
+        correctedLocation.insertLocationDetails(distance, terrain)
 
     # Query to list all the Coordinates details with terrain contains "road" and does not contain "civil station"
     correctedLocation.queryroadlist()
