@@ -1,3 +1,8 @@
+Project details:
+================
+	latitude_longitude_details.csv is provided with lattitide and longitude details. 
+	Check if the coordinates are in line. If not predict a coordinate to make them inline.
+
 Assumptions made:
 =================
 	- Journey or path course is from a lower coordinate to a higher coordinate
@@ -5,7 +10,7 @@ Assumptions made:
 	- starting point and final destination are in a line (other coordinates are checked and corrected to this line)
 
 
-DB details:
+DataBase details:
 ===========
 	Database Platform: PostgreSQL
 	Database Name : LocationDB
